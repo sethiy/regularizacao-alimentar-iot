@@ -54,16 +54,6 @@ Promover regularidade alimentar através de alertas sonoros e visuais, prevenind
 3. Inscreva-se nos tópicos MQTT no HiveMQ Web Client
 4. Publique "INICIAR" no tópico de alerta para testar
 
-## Estrutura do Projeto
-regularizacao-alimentar-iot/
-├── src/ # Código fonte
-├── docs/ # Documentação
-├── diagramas/ # Esquemas e fluxogramas
-├── img/ # Imagens do projeto
-└── README.md # Este arquivo
-
-## Demonstração
-https://www.youtube.com/watch?v=VuffliUhWhU
 
 ## Autores
 - **Rafael Oliveira Viana** - 10416106@mackenzista.com.br

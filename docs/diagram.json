@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "Rafael",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 147.95,
+      "left": -76.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 25.2,
+      "left": -111.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -64.8,
+      "left": 107.4,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": 42.8, "left": 31.9, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": -64.06,
+      "left": 0.23,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bz1:1", "esp:25", "purple", [ "v0" ] ],
+    [ "oled1:SDA", "esp:21", "yellow", [ "v0" ] ],
+    [ "oled1:SCL", "esp:22", "cyan", [ "v0" ] ],
+    [ "oled1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "esp:GND.1", "r1:2", "blue", [ "h0" ] ],
+    [ "led1:C", "r1:1", "blue", [ "v0" ] ],
+    [ "led1:A", "esp:26", "red", [ "v0" ] ],
+    [ "bz1:2", "esp:GND.3", "limegreen", [ "v0" ] ],
+    [ "oled1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "sw1:1", "esp:3V3", "green", [ "h-19.2", "v-48" ] ],
+    [ "sw1:2", "esp:4", "green", [ "v0" ] ],
+    [ "sw1:3", "esp:GND.3", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

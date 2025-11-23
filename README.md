@@ -59,9 +59,9 @@ Promover regularidade alimentar através de alertas sonoros e visuais, prevenind
 - **Rafael Oliveira Viana** - 10416106@mackenzista.com.br
 
 ## Instituição
-Faculdade de Computação e Informática  
-Universidade Presbiteriana Mackenzie (UPM)  
-São Paulo, SP - Brazil
+Análise e Desenvolvimento de Sistemas
+Universidade Presbiteriana Mackenzie
+São Paulo, SP - Brasil
 
 ## Links Úteis
 - Simulador Wokwi: https://wokwi.com
